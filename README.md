@@ -1,7 +1,10 @@
 # cv
 
+A Compiled version can also be found on https://www.overleaf.com/read/vrhgpjrzgxfq
+
 Graduate CV
 ------------
+
 
 Extended from  https://www.latextemplates.com/template/plasmati-graduate-cv 
 
@@ -12,7 +15,7 @@ Extended from  https://www.latextemplates.com/template/plasmati-graduate-cv
 
 - Important note:
 
- This template needs to be compiled with XeLaTeX.
+ This template needs to be compiled with **XeLaTeX**.
 
  The main document font is called Fontin and can be downloaded for free
 
