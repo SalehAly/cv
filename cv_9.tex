@@ -24,7 +24,7 @@
 \usepackage{layout}
 \usepackage{a4wide}
 \usepackage{fontspec}
-\addtolength{\voffset}{-0.75in}
+\addtolength{\voffset}{-0.9in}
 \addtolength{\footskip}{1mm}
 \usepackage{hyperref}
 \usepackage{setspace}
@@ -37,11 +37,13 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
-\titleformat{\section}{ \raggedright}{}{-2cm}{}[\titlerule] % Text formatting of sections
+\titleformat{\section}{ \bfseries\raggedright}{}{0cm}{}[] % Text formatting of sections
 
-\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+\titlespacing{\section}{0pt}{0pt}{-10pt} % Spacing around sections
 \usepackage{changepage}
 \usepackage{fontawesome}
+{\renewcommand{\arraystretch}{0.83} % Adjusts the spaces between table columns
+
 
 \begin{document}
 
@@ -61,14 +63,13 @@
 \begin{adjustwidth}{-3cm}{}
 
 \begin{tabular}{rl}
-	& Phone: 017672763029, 
-		\faLinkedin: \href{https://de.linkedin.com/in/aly-saleh-ba948164}{Aly Saleh}, 
-		\faGithub:  \href{https://github.com/SalehAly}{@SalehAly}, 
- E-mail: 	\href{mailto:aly.mostafa15@gmail.com}{aly.mostafa15@gmail.com}
-	\\& 
-	Address: Karl-Köglsperger-Straße, 80939, Munich, 
-	Nationality: Egyptian,  
-	Date of Birth: 1 December 1991\\
+	&	\textbf{Phone}: 017672763029, 
+		  \textbf{E-mail}: 	\href{mailto:aly.mostafa15@gmail.com}{aly.mostafa15@gmail.com},
+ 		  \textbf{Nationality}: Egyptian,  \faLinkedin: \href{https://de.linkedin.com/in/aly-saleh-ba948164}{Aly Saleh}
+ 
+	\\&	\textbf{Address}: Karl-Köglsperger-Straße, 80939, Munich, 
+		 \textbf{Date of Birth}: 1 December 1991,		 \faGithub:  \href{https://github.com/SalehAly}{@SalehAly}\\
+
 \end{tabular}
 \begin{figure}
 	\begin{center}
@@ -79,7 +80,7 @@
 
 
 
-\end{adjustwidth}
+%\end{adjustwidth}
 
 
 %----------------------------------------------------------------------------------------
@@ -87,9 +88,9 @@
 %----------------------------------------------------------------------------------------
 
 \section{Work Experience}
-\begin{adjustwidth}{-3cm}{}
-\begin{tabular}{r|p{17.5cm}}
+\rule[0pt]{20cm}{0.5pt}
 
+\begin{tabular}{r|p{17.5cm}}
 		
 \textsc{Present} & \textbf{Work Student Back-end Software Engineer} at \textbf{IDgard.de}, Munich \\
 \textsc{Oct 2015} & \footnotesize{
@@ -123,15 +124,15 @@
 
 %------------------------------------------------
 
-\end{adjustwidth}
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 
 
 \section{Education}
+\rule[0pt]{20cm}{0.5pt}
 
-\begin{adjustwidth}{-3cm}{}
 \begin{tabular}{r|p{17.5cm}}
 		
 %------------------------------------------------
@@ -157,7 +158,7 @@
 \\
 \end{tabular}
 
-\end{adjustwidth}
+
 %----------------------------------------------------------------------------------------
 %	SCHOLARSHIPS AND ADDITIONAL INFO
 %----------------------------------------------------------------------------------------
@@ -165,7 +166,8 @@
 
 
 \section{Highlights} \label{praktikum}
-\begin{adjustwidth}{-3cm}{}
+\rule[0pt]{20cm}{0.5pt}
+
 \begin{tabular}{r|p{17.5cm}}
 	\textsc{Projects} &Algorithms For Programming Contests: Learned new efficient algorithms widely used in programming contests. 
 	\\\multicolumn{1}{c}{} \\
@@ -174,19 +176,20 @@
 	&Software Engineering for Business Applications: Used \textbf{Play} framework in order to implement a business case
 	after creating a \textbf{Business Model Canvas} and \textbf{Value Proposition Canvas}.
 	\\\multicolumn{1}{c}{} \\
-	Seminars &Internet-Scale Distributed Systems Seminar: Gave a presentation and wrote a report about \textbf{redis} replication, clustering and persistence. \\
+	\textsc{Seminars} &Internet-Scale Distributed Systems Seminar: Gave a presentation and wrote a report about \textbf{redis} replication, clustering and persistence. \\
 \end{tabular}
-\end{adjustwidth}
+
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS 
 %----------------------------------------------------------------------------------------
 
 \section{Programming Knowledge}
-\begin{adjustwidth}{-3cm}{}
-	\begin{tabular}{r|p{17.5cm}}
-	
-\textbf{Excellent}  & Java, Servlets, JAX-RS, JSP's, JPA,  MySQL, Linux, GIT, Maven.
+\rule[0pt]{20cm}{0.5pt}
+
+\begin{tabular}{r|p{17.5cm}}
+
+\textbf{Excellent}  & Java, Servlets, JAX-RS, JSP's, JPA,  MySQL, Linux, GIT, Maven, JIRA, Confluence, Bamboo.
 \\\multicolumn{2}{c}{} \\
 \textbf{Good}  &  Spring boot, Google Guice, Swagger, Docker, Load Testing "Jmeter", Logstash, Kibana (ELK Stack), Play
  
@@ -195,7 +198,7 @@
 \textbf{Fair}  & Python, Swift, Android, ElasticSearch
 \\
 \end{tabular}
-\end{adjustwidth}
+
 
 
 %----------------------------------------------------------------------------------------
@@ -203,12 +206,19 @@
 %----------------------------------------------------------------------------------------
 
 \section{Languages and Courses}
-\begin{adjustwidth}{-2cm}{}
+\rule[0pt]{20cm}{0.5pt}
+
 	\begin{tabular}{rp{17.5cm}}
 \textbf{English}: Fluent, 
 \textbf{German}: Good Knowledge \textbf{B1}, 
 \textbf{Arabic}: Mother Tongue\\
 \end{tabular}
+
+
+
+\section{Tech. Interests}
+\rule[0pt]{20cm}{0.5pt}        \\
+Microservices, Reactive Manifesto, GO lang,  Internet Of Things, New programming languages, Scalability, Security.
 \end{adjustwidth}
 
 %----------------------------------------------------------------------------------------
