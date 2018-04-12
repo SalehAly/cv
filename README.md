@@ -1,6 +1,4 @@
-# cv
 
-A Compiled version can also be found on https://www.overleaf.com/read/vrhgpjrzgxfq
 
 Graduate CV
 ------------
