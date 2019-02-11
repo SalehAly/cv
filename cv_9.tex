@@ -41,7 +41,9 @@
 
 \titlespacing{\section}{0pt}{0pt}{-10pt} % Spacing around sections
 \usepackage{changepage}
-\usepackage{fontawesome}
+\usepackage[export]{adjustbox}
+
+
 {\renewcommand{\arraystretch}{0.83} % Adjusts the spaces between table columns
 
 
@@ -62,21 +64,42 @@
 
 \begin{adjustwidth}{-3cm}{}
 
-\begin{tabular}{rl}
-	&	\textbf{Phone}: 017672763029, 
-		  \textbf{E-mail}: 	\href{mailto:aly.mostafa15@gmail.com}{aly.mostafa15@gmail.com},
- 		  \textbf{Nationality}: Egyptian,  \faLinkedin: \href{https://de.linkedin.com/in/aly-saleh-ba948164}{Aly Saleh}
- 
-	\\&	\textbf{Address}: Riesengebirgstraße, 80993, Munich, 
-		 \textbf{Date of Birth}: 1 December 1991,		 \faGithub:  \href{https://github.com/SalehAly}{@SalehAly}\\
+\section{Personal Information}
+\rule[0pt]{20cm}{0.5pt}\\
 
+%\begin{tabular}{c|c c|c}
+\begin{center}
+	
+\begin{tabular}{ c c }
+
+	Phone: & 017672763029\\
+	
+	E-mail:& \href{mailto:aly.mostafa15@gmail.com}{aly.mostafa15@gmail.com} \\
+	
+	Date of Birth:& 1 December 1991 \\
+	
+	Nationality:& Egyptian \\
+	
+	GitHub:&  \href{https://github.com/SalehAly}{@SalehAly}\\
+	
+	
+	LinkedIn: &\href{https://de.linkedin.com/in/aly-saleh-ba948164}{Aly Saleh}\\
+	
+	Twitter:& \href{https://twitter.com/alysaaleh}{@alysaaleh}\\
+	
+	
 \end{tabular}
-\begin{figure}
-	\begin{center}
-	\hspace{14cm} \vspace{-3cm} \includegraphics[scale=0.06]{me.jpg}	
-	\end{center}
 
+
+\end{center}
+
+	\begin{figure}[h]
+	
+	\vspace{-3cm} \hspace{13cm} \includegraphics[scale=0.06]{me.jpg}	
+	
 \end{figure}
+
+
 
 
 
@@ -87,19 +110,22 @@
 %	WORK EXPERIENCE 
 %----------------------------------------------------------------------------------------
 
-\section{Work Experience}
+\section{Experience}
 \rule[0pt]{20cm}{0.5pt}
 
 \begin{tabular}{r|p{17.5cm}}
 		
-		\textsc{Present} & \textbf{Junior Software Developer} at \textbf{CHECK24 Vergleichsportal GmbH}, Munich \\
+				\textsc{Present} & \textbf{Software Developer} at \textbf{CHECK24 Vergleichsportal GmbH}, Munich \\
 		\textsc{Jul 2017} & \footnotesize{
-			- Developing new loan products for \textbf{Kredite24} using \textbf{Dockerized} Micro-services with \textbf{Spring-Boo}t as its back-bone.\newline
-			- Using \textbf{Redis} for caching, \textbf{ActiveMQ} for pub-sub messaging, and \textbf{Postgres} as database. \newline
-			 - \textbf{Kubernetes} for high availability, fault-tolerance, and scheduled jobs. \newline
-						- Wrote different \textbf{Jenkins} pipelines \textbf{Groovy} scripts to automate the build, test, and deployment process. \newline
-			-  Utilizing \textbf{Scrum} as our \textbf{Agile} software development process.
-		}
+				- Developed new loan products for \textbf{Kredite24} a new FinTech startup.\newline
+			- One of the main contributers to \href{https://www.check24.de/cashreserve/}{CashReserve} which is a very succesful loan product. \newline
+- Integrated Digital Identification Signature APIs to our products including IDnow and WebId. \newline
+			- Helped develop the Home banking API's for our CashReserve product included in the Check24 App. \newline
+			- Used \textbf{Typescript} and \textbf{AngularJS} to develop some of our webpages. \newline
+			- Tech stack included \textbf{Kubernetes}, \textbf{Docker}, \textbf{Spring Framework}, \textbf{Jenkins}, \textbf{Redis}, \textbf{ActiveMQ}, \textbf{Elasticsearch}, \textbf{Postgres}
+		 \newline
+		 and \textbf{Grafana}.
+	}
 		\\ \multicolumn{2}{c}{}\\
 		
 \textsc{May 2017} & \textbf{Work Student Back-end Software Engineer} at \textbf{IDgard.de}, Munich \\
@@ -159,7 +185,7 @@
 \\ \multicolumn{2}{c}{} \\
 
 
-\textsc{July} 2013 & \textbf{Bachelor Degree in Computer Science and Engineering},\\ \textsc{July} 2008& \normalsize\textbf{The German University in Cairo}, Egypt\\
+\textsc{July} 2013 & \textbf{Bachelor Degree in Computer Science and Engineering}\\ \textsc{July} 2008& \normalsize\textbf{The German University in Cairo}, Egypt\\
 & \small{Faculty of Media Engineering and Technology} \small{Department of Computer Science and Engineering}  \footnotesize \hfill| \normalsize \textsc{Gpa}: 1.86
 \\\multicolumn{2}{c}{} \\
 
@@ -167,7 +193,7 @@
 \textsc{Mar} 2012 & \small{Faculty of Computer Science, Department of Software Engineering and} \small{Compiler Construction.} 
 % \footnotesize{Thesis: ``CHR-based Text Mining and Classification of Google Search Results''}   \footnotesize{Advisor: Prof. Thom \textsc{Fr{\"u}hwirth}} \hfill| \footnotesize \normalsize
  \hfill| \footnotesize \normalsize \textsc{Grade}: A-/A 
-\\
+\\\multicolumn{2}{c}{} \\
 \end{tabular}
 
 
@@ -177,37 +203,26 @@
 
 
 
-\section{Highlights} \label{praktikum}
-\rule[0pt]{20cm}{0.5pt}
 
-\begin{tabular}{r|p{17.5cm}}
-	\textsc{Projects} &Algorithms For Programming Contests: Learned new efficient algorithms widely used in programming contests and optimizations. 
-	\\\multicolumn{1}{c}{} \\
-	&IOS Praktikum: Participated in \href{https://www1.in.tum.de/lehrstuhl_1/component/content/article/733#CHEST}{CHEST}; A Cyber-Physical System that provides live health data to action forces in critical situations. Learned \textbf{Swift 2.0} and Implemented a back end system using \textbf{Node.js}, \textbf{MQTT} and \textbf{MongoDB}. \\\multicolumn{1}{c}{} \\
-	
-	&Software Engineering for Business Applications: Used \textbf{Play} framework in order to implement a business case
-	after creating a \textbf{Business Model Canvas} and \textbf{Value Proposition Canvas}.
-	\\\multicolumn{1}{c}{} \\
-%	\textsc{Seminars} &Internet-Scale Distributed Systems Seminar: Gave a presentation and wrote a report about \textbf{redis} replication, clustering and persistence. \\
-\end{tabular}
 
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS 
 %----------------------------------------------------------------------------------------
 
-\section{Programming Knowledge}
+\section{Programming}
 \rule[0pt]{20cm}{0.5pt}
 
 \begin{tabular}{r|p{17.5cm}}
 
-\textbf{Excellent}  & Java, Spring, JPA,  MySQL, Postgres, Unix/Linux, GIT, Maven, Jenkins, Docker, Node-Red, CI, CD.
+\textbf{Excellent}  &Java, Spring(Boot, MVC, Data, Security, Integration), Kubernetes, Jenkins, JPA, Hibernate, MySQL, Postgres, GIT, Maven, Jenkins, Docker, Sonar, Node-Red, OOP, TDD(Test Driven Development), BDD(Behaviour Driven Development), SCRUM, Design  Patterns,  CI, CD.
 \\\multicolumn{2}{c}{} \\
-\textbf{Good}  & Redis, ActiveMQ, Kubernetes, Groovy, Google Guice, Swagger, Load Testing "Jmeter", Logstash, Kibana (ELK Stack), PHP, Javascript, Nodejs, MongoDB, Vaadin, Jquery, JqueryUI, Bash Scripts, {\fb \LaTeX}
+\textbf{Good}  & Redis, ActiveMQ,  Groovy, Typescript, Angular, Swagger, Load Testing "Jmeter",  Logstash, Kibana (ELK Stack), PHP, Javascript, Nodejs, MongoDB, Vaadin, Jquery, JqueryUI, Bash Scripts, {\fb \LaTeX}
 \\\multicolumn{2}{c}{} \\
 \textbf{Fair}  & Python, Swift, Android, ElasticSearch
-\\
+\\\multicolumn{2}{c}{} \\
 \end{tabular}
+
 
 
 
@@ -215,22 +230,33 @@
 %	LANGUAGES
 %----------------------------------------------------------------------------------------
 
-\section{Languages and Courses}
+\section{Languages}
+\rule[0pt]{20cm}{0.5pt}\\
+\textbf{English}: Fluent, 
+\textbf{German}: \textbf{B1}, 
+\textbf{Arabic}: Mother Tongue\\
+
+\section{Other} \label{praktikum}
 \rule[0pt]{20cm}{0.5pt}
 
-	\begin{tabular}{rp{17.5cm}}
-\textbf{English}: Fluent, 
-\textbf{German}: Good Knowledge \textbf{B1}, 
-\textbf{Arabic}: Mother Tongue\\
+\begin{tabular}{r|p{17.5cm}}
+	\textsc{Projects} &Algorithms For Programming Contests: Learned new efficient algorithms widely used in programming contests and optimizations. 	\\\multicolumn{1}{c}{} 
+	%&IOS Praktikum: Participated in \href{https://www1.in.tum.de/lehrstuhl_1/component/content/article/733#CHEST}{CHEST}; A Cyber-Physical System that provides live health data to action forces in critical situations. Learned \textbf{Swift 2.0} and Implemented a back end system using \textbf{Node.js}, \textbf{MQTT} and \textbf{MongoDB}. \\\multicolumn{1}{c}{} \\
+	
+	%	&Software Engineering for Business Applications: Used \textbf{Play} framework in order to implement a business case
+	%	after creating a \textbf{Business Model Canvas} and \textbf{Value Proposition Canvas}.
+	%	\\\multicolumn{1}{c}{} \\
+	%	\textsc{Seminars} &Internet-Scale Distributed Systems Seminar: Gave a presentation and wrote a report about \textbf{redis} replication, clustering and persistence. \\
 \end{tabular}
 
 
-
 \section{Tech. Interests}
-\rule[0pt]{20cm}{0.5pt}        \\
-Microservices, Reactive Manifesto,  Internet Of Things, New programming languages, Scalability, Security.
-\end{adjustwidth}
+\rule[0pt]{20cm}{0.5pt}     \\  
+Reactive Manifesto, Internet Of Things, New programming languages, Scalability, Security.\\
 
+
+
+\end{adjustwidth}
 %----------------------------------------------------------------------------------------
 %	INTERESTS AND ACTIVITIES
 %----------------------------------------------------------------------------------------
