@@ -28,6 +28,7 @@
 \addtolength{\footskip}{1mm}
 \usepackage{hyperref}
 \usepackage{setspace}
+
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying 
@@ -35,6 +36,7 @@
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+\usepackage{tikzpagenodes}
 
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{ \bfseries\raggedright}{}{0cm}{}[] % Text formatting of sections
@@ -42,6 +44,7 @@
 \titlespacing{\section}{0pt}{0pt}{-10pt} % Spacing around sections
 \usepackage{changepage}
 \usepackage[export]{adjustbox}
+
 
 
 {\renewcommand{\arraystretch}{0.83} % Adjusts the spaces between table columns
@@ -59,46 +62,39 @@
 
 \par{\hspace{5cm}\huge Aly \textsc{Saleh}\par} % Your name
 
-
 % \raggedright{Personal Data}
 
 \begin{adjustwidth}{-3cm}{}
-
+%\rule[0pt]{20cm}{0.5pt}
 \section{Personal Information}
-\rule[0pt]{20cm}{0.5pt}\\
+\rule[0pt]{20cm}{0.5pt}
 
-%\begin{tabular}{c|c c|c}
 \begin{center}
-	
-\begin{tabular}{ c c }
+\begin{tabular}{c c}
 	Phone: & 017672763029\\
-	
-	E-mail:& \href{mailto:aly.mostafa15@gmail.com}{aly.mostafa15@gmail.com} \\
-	
+	E-mail:& \href{mailto:aly.mostafa15@gmail.com}{aly.mostafa15@gmail.com} \\	
+	%Contact:& 017672763029 \href{mailto:aly.mostafa15@gmail.com}{aly.mostafa15@gmail.com} \\	
 	Date of Birth:& 1 December 1991 \\
-	
 	Nationality:& Egyptian \\
-
+	%Social: &  \href{https://github.com/SalehAly}{GitHub}  \href{https://salehaly.github.io}{Web page}  \href{https://de.linkedin.com/in/aly-saleh-ba948164}{LinkedIn}
 	GitHub:&  \href{https://github.com/SalehAly}{@SalehAly}\\
-	Web-page:& \href{https://salehaly.github.io}{https://salehaly.github.io}\\
-	LinkedIn: &\href{https://de.linkedin.com/in/aly-saleh-ba948164}{Aly Saleh}\\
+	Web-page:&  \href{https://salehaly.github.io}{https://salehaly.github.io} \\
+	LinkedIn: &\href{https://de.linkedin.com/in/aly-saleh-ba948164}{Aly Saleh}
+
 
 \end{tabular}
-
-
 \end{center}
 
-	\begin{figure}[h]
 	
-	\vspace{-3cm} \hspace{13cm} \includegraphics[scale=0.055]{me.jpg}	
-	
-\end{figure}
+	\vspace{-2.9cm}   \hspace{16cm}  
+\scalebox {0.75} {
+	\begin{tikzpicture}[baseline=(ola.center),inner sep=0pt]
+	\clip (0,0)  circle (2cm) node (ola) {\includegraphics[width=4cm]{me.jpg}};
+	\end{tikzpicture}
+}
 
 
 
-
-
-%\end{adjustwidth}
 
 
 %----------------------------------------------------------------------------------------
@@ -109,26 +105,25 @@
 \rule[0pt]{20cm}{0.5pt}
 
 \begin{tabular}{r|p{17.5cm}}
-		
-				\textsc{Present} & \textbf{Software Developer} at \textbf{CHECK24 Vergleichsportal GmbH}, Munich \\
+	
+						\textsc{Present} & \textbf{Senior Software Engineer} at \textbf{\href{https://www.securityandsafetythings.com}{Security and Safety things}}, Munich \\
+		\textsc{Jul 2019}  &	
+		\footnotesize {
+							- Developing an online store \& developer console for smart camera applications in S\&ST IoT ecosystem.
+						}
+		\\ \multicolumn{2}{c}{}\\
+				\textsc{June 2019} & \textbf{Software Developer} at \textbf{CHECK24 Vergleichsportal GmbH}, Munich \\
 		\textsc{Jul 2017} & \footnotesize{
 				- Developed new loan products for \textbf{Kredite24} a new FinTech startup.\newline
-			- One of the main contributers to \href{https://www.check24.de/cashreserve/}{CashReserve} which is a very successful loan product. \newline
-- Integrated Digital Identification Signature APIs to our products including IDnow and WebId. \newline
-			- Wrote different batch jobs using \textbf{Spring Batch}. \newline
-						- Intoduced Keycloak as a SSO system to our back-office tools. \newline
-			- Helped develop the Home banking API's for our CashReserve product included in the Check24 App. \newline
-			- Used \textbf{Typescript} and \textbf{AngularJS} to develop some of our webpages and back-office tools. \newline
-			- Tech stack included \textbf{Kubernetes}, \textbf{Docker}, \textbf{Spring Framework}, \textbf{Jenkins}, \textbf{Redis}, \textbf{ActiveMQ}, \textbf{Elasticsearch}, \textbf{Postgres}
-		 \newline
-		 and \textbf{Grafana}.
+			- One of the main contributers to \href{https://www.check24.de/cashreserve/}{CashReserve} \& its mobile home banking. \newline
+- Integrated Digital Identification Signature APIs to our products including IDnow and WebId.
 	}
 		\\ \multicolumn{2}{c}{}\\
 		
 \textsc{May 2017} & \textbf{Work Student Back-end Software Engineer} at \textbf{IDgard.de}, Munich \\
 \textsc{Oct 2015} & \footnotesize{
 	- Implemented a proof of concept \textbf{JAX-RS} back end that is at least \textbf{twice} as fast than the current one.\newline
-	- Ran several performance and stress tests using \textbf{Apache JMeter} \newline
+	- Ran several performance and stress tests using \textbf{Apache JMeter}. \newline
 	- Researched on how to write a new API specification that is RESTful using current trends in technology \textbf{swagger.io}.
 }
 \\ \multicolumn{2}{c}{}\\
@@ -136,8 +131,8 @@
 %------------------------------------------------
 
 \textsc{Oct 2015} & \textbf{Work Student Java Developer} at \textbf{HRForecast.de}, Munich \\
-\textsc{May 2015} & \footnotesize{ - Enhanced an analytics tool mainly written in Java with \textbf{Vaadin} framework. \newline
-- Refracted the code base since it lacked extensibility and scalability.
+\textsc{May 2015} & \footnotesize{- Enhanced an analytics tool mainly written in Java with \textbf{Vaadin} framework. \newline
+- Refactored the code base since it lacked extensibility and scalability.
 } \\ 
 \multicolumn{2}{c}{} \\
 
@@ -147,9 +142,7 @@
 \textsc{Sep 2012} & 
 
 \footnotesize{
-	- Had hands on multiple web and database servers, maintained back-end requests adding more features and solving problems (bugs).\newline 
-	- Transferred \textbf{MySQL} database into SAN storage, used JMeter for functional and load testing, benchmarked MySQL using sysbench.\newline
-	- Developed many \textbf{JSP} tools and wrote \textbf{bash} scripts to dump the database and synchronize the logs to other servers.\newline
+	- Developed API's for a social traffic mobile application. \newline 
 	- Participated in a research for handling big data using the \textbf{ELK} stack.
 }
 \end{tabular}
@@ -188,20 +181,9 @@
 
 \textsc{May} 2012 & \textbf{B.Sc Thesis, The University of Ulm}, Germany\\
 \textsc{Mar} 2012 & \small{Faculty of Computer Science, Department of Software Engineering and} \small{Compiler Construction.} 
-% \footnotesize{Thesis: ``CHR-based Text Mining and Classification of Google Search Results''}   \footnotesize{Advisor: Prof. Thom \textsc{Fr{\"u}hwirth}} \hfill| \footnotesize \normalsize
  \hfill| \footnotesize \normalsize \textsc{Grade}: A-/A 
-\\\multicolumn{2}{c}{} \\
+\\\multicolumn{2}{c}{}
 \end{tabular}
-
-
-%----------------------------------------------------------------------------------------
-%	SCHOLARSHIPS AND ADDITIONAL INFO
-%----------------------------------------------------------------------------------------
-
-
-
-
-
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS 
@@ -211,15 +193,13 @@
 \rule[0pt]{20cm}{0.5pt}
 
 \begin{tabular}{r|p{17.5cm}}
-
-\textbf{Excellent}  &Java, Spring(Boot, Batch, MVC, Data, Security, Integration), Kubernetes, Jenkins, JPA, Hibernate, MySQL, Postgres, GIT, Maven, Jenkins, Docker, Sonar, Node-Red, OOP, TDD(Test Driven Development), BDD(Behaviour Driven Development), SCRUM, Design  Patterns,  CI, CD.
+\textbf{Excellent}  &Java, Spring, Kubernetes, Docker, Jenkins, JPA, Hibernate, MySQL, Postgres, GIT, Maven, Sonar, Node-Red, OOP, TDD, SCRUM, Design Patterns,  CI, CD.
 \\\multicolumn{2}{c}{} \\
-\textbf{Good}  & Redis, ActiveMQ,  Groovy, Typescript, Angular, Swagger, Load Testing "Jmeter",  Logstash, Kibana (ELK Stack), PHP, Javascript, Nodejs, MongoDB, Vaadin, Jquery, JqueryUI, Bash Scripts, {\fb \LaTeX}
+\textbf{Good}  &  Terraform, AWS, Redis, ActiveMQ,  Groovy, Typescript, AngularJS, Swagger, Load Testing "Jmeter",  Logstash, Kibana (ELK Stack), PHP, Javascript, Nodejs, MongoDB, Vaadin, Jquery, JqueryUI, Bash Scripts.
 \\\multicolumn{2}{c}{} \\
 \textbf{Fair}  & Python, Swift, Android, ElasticSearch
-\\\multicolumn{2}{c}{} \\
+\\\multicolumn{2}{c}{} 
 \end{tabular}
-
 
 
 
@@ -230,14 +210,14 @@
 \section{Languages}
 \rule[0pt]{20cm}{0.5pt}\\
 \textbf{English}: Fluent, 
-\textbf{German}: \textbf{B1}, 
-\textbf{Arabic}: Mother Tongue\\
+\textbf{German}: B1, 
+\textbf{Arabic}: Mother Tongue
 
 \section{Other} \label{praktikum}
 \rule[0pt]{20cm}{0.5pt}
 
 \begin{tabular}{r|p{17.5cm}}
-	\textsc{Projects} &Algorithms For Programming Contests: Learned new efficient algorithms widely used in programming contests and optimizations. 	\\\multicolumn{1}{c}{} 
+	\textsc{Projects} &Algorithms For Programming Contests: Learned efficient algorithms widely used in programming contests and optimizations.\\\multicolumn{1}{c}{}
 	%&IOS Praktikum: Participated in \href{https://www1.in.tum.de/lehrstuhl_1/component/content/article/733#CHEST}{CHEST}; A Cyber-Physical System that provides live health data to action forces in critical situations. Learned \textbf{Swift 2.0} and Implemented a back end system using \textbf{Node.js}, \textbf{MQTT} and \textbf{MongoDB}. \\\multicolumn{1}{c}{} \\
 	
 	%	&Software Engineering for Business Applications: Used \textbf{Play} framework in order to implement a business case
@@ -247,97 +227,11 @@
 \end{tabular}
 
 
-\section{Tech. Interests}
-\rule[0pt]{20cm}{0.5pt}     \\  
-Reactive Manifesto, Internet Of Things, New programming languages, Scalability, Security.\\
-
+%\section{Tech. Interests}
+%\rule[0pt]{20cm}{0.5pt}     \\  
+%Reactive Manifesto, Internet Of Things, New programming languages, Scalability, Security.
 
 
 \end{adjustwidth}
-%----------------------------------------------------------------------------------------
-%	INTERESTS AND ACTIVITIES
-%----------------------------------------------------------------------------------------
-
-%\section{Masters Courses} \label{courses}
-
-%\begin{adjustwidth}{-2cm}{}
-%Advanced Topics on Software Testing, 
-%Parallel Programming, 
-%Project Organization and Management for Software Engineering, 
-%Security Engineering, 
-%Seminar on Internet-scale Distributed Systems, 
-%Software Engineering For Business Applications, 
-%Software Design Patterns, 
-%User Modeling and Recommender Systems, 
-%Value Based Management.
-%\end{adjustwidth}
-
-%\section{Interests and Activities}
-%\begin{adjustwidth}{-2cm}{}
-%Internet Of Things, New programming languages, Scalability, Privacy, Meetups, %\\Hackathons and new Technologies 
-%Traveling and Exploration, Charity, Fishing, Football, Volleyball and Gymnastics.
-%\end{adjustwidth}
-
-
-
-%----------------------------------------------------------------------------------------
-
-%\newpage
-
-%----------------------------------------------------------------------------------------
-%	GRADE TABLES
-%----------------------------------------------------------------------------------------
-
-%\par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
-
-%\begin{center}
-%\begin{tabular}{lcc}
-%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
-%Corporate Finance (Valuation) & 25 & 6\\
-%Financial Statement Analysis & 28 & 6\\
-%Statistics & 27 & 6\\
-%Theory of Finance & 26 & 6\\
-%Quantitative Methods for Finance & 30 & 6\\
-%Econometrics & 24 & 6\\
-%Derivatives & 31 & 6\\
-%Management of Financial and Insurance Companies & 30 & 6\\
-%Business Law & 31 & 6\\
-%Investment Banking	& 28 & 6\\ \\		
-%Behavioral Models for Economics and Finance	 & 29 & 6\\
-%Numerical Methods for Finance & 29 & 6\\
-%Advanced Derivatives & 30 & 6\\
-%Fixed Income (Advanced Methods) & 30 & 6\\ \\
-%English Language & 30 &	4\\
-%French Language & 31 &	4\\	
-%Internship & & 8\\		
-%Final Thesis & & 20\\	
-%& Total & 120\\\cline{2-3}
-%&\textsc{Gpa}&\textbf{8.0}
-%\end{tabular}
-%\end{center}
-%\bigskip
-%\hrule
-%\bigskip
-
-%------------------------------------------------
-
-%\bigskip
-
-%\par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering %Grades\par}\normalsize
-
-%\begin{center}
-%\begin{tabular}{lcc}
-%\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade} & \textsc{Grade Points}\\ 
-%\hline
-%Corporate Financial Strategy & A & 4\\
-%Derivatives & A & 4\\
-%Money, Credit, and Banking & A & 4\\
-%Business Strategy & A- & 3.5\\
-%& &\\\cline{2-3}
-%& \textsc{Gpa} & \textbf{3.875}
-%\end{tabular}
-%\end{center}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
